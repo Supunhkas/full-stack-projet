@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Login from "./pages/Login";
+import CustomNavbar from "./components/CustomNavbar";
 
 function App() {
   useEffect(() => {
@@ -9,8 +11,7 @@ function App() {
   }, []);
   return (
     <>
-      <div data-aos="fade-up">Animate me!</div>
-      <h1 className="bg-slate-500 "> Hello</h1>
+      <CustomNavbar />
     </>
   );
 }
